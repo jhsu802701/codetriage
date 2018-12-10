@@ -11,6 +11,6 @@ if [ -f '/home/winner/shared/ports.txt' ]; then
   cat /home/winner/shared/ports.txt;
 fi
 
-echo '-------------------------------'
-echo 'rails server -b 0.0.0.0 -p 3000'
-rails server -b 0.0.0.0 -p 3000
+echo '------------------------------------'
+echo 'heroku local -f Procfile.development'
+heroku local -f Procfile.development
