@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '>= 2.5', '< 2.7'
+ruby '2.6.0'
 
 git_source :github do |name|
   "https://github.com/#{name}.git"
@@ -31,7 +31,7 @@ gem 'maildown', '3.0.2'
 gem 'omniauth', '~> 1.8.1'
 gem 'omniauth-github'
 gem 'pg'
-gem 'puma', github: "puma/puma"
+gem 'puma'
 gem 'rack-timeout'
 gem 'rails_autolink'
 gem 'rrrretry'
