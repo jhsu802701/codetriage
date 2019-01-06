@@ -120,3 +120,10 @@ gem 'premailer-rails'
 
 gem 'barnes'
 gem 'puma_worker_killer'
+
+# BEGIN: for outline.sh
+group :development do
+  gem 'railroady', '1.5.3' # Generates block diagrams
+  gem 'rails-erd', '1.5.2' # Generates block diagrams
+end
+# END: for outline.sh
