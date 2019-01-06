@@ -12,3 +12,9 @@ echo 'bundle update'
 bundle update
 
 sh git_check.sh
+
+# Checks for outdated and insecure gems
+echo '----------------------------------------------------------'
+echo 'bundle exec gemsurance --output tmp/gemsurance_report.html'
+bundle exec gemsurance --output tmp/gemsurance_report.html
+echo 'The Gemsurance Report is at tmp/gemsurance_report.html .
