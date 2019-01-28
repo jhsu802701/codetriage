@@ -2,9 +2,7 @@
 
 echo 'Welcome to the unofficial build script of the CodeTriage site!'
 echo 'This script assumes that you are using the Ruby on Racetracks'
-echo 'system to work on this project and that you are using the'
-echo 'pre-installed tmux tool to provide simultaneous multiple windows'
-echo 'to interact with the same Docker container.'
+echo 'protocols to work on this project.'
 echo ''
 echo 'The purpose of this script is to allow you to quickly and efficiently'
 echo 'set up this project.  Setting up the project so that all tests pass'
