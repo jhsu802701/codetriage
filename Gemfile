@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.6.0'
+ruby '2.6.2'
 
 git_source :github do |name|
   "https://github.com/#{name}.git"
@@ -15,10 +15,9 @@ gem 'mime-types', '~> 3.2.2', require: 'mime/types/columnar'
 
 # Gems required in all environments
 if ENV["RAILS_MASTER"] == '1'
-  gem 'arel', git: 'https://github.com/rails/arel.git'
   gem 'rails', git: 'https://github.com/rails/rails.git'
 else
-  gem 'rails', '5.2.1.1'
+  gem 'rails', '5.2.2.1'
 end
 
 gem 'bluecloth'
@@ -28,12 +27,11 @@ gem 'git_hub_bub'
 gem 'jquery-rails'
 gem 'local_time', '2.1.0'
 gem 'maildown', '3.0.2'
-gem 'omniauth', '~> 1.8.1'
+gem 'omniauth', '~> 1.9.0'
 gem 'omniauth-github'
 gem 'pg'
 gem 'puma'
 gem 'rack-timeout'
-gem 'rails_autolink'
 gem 'rrrretry'
 gem 'valid_email'
 gem 'warden', '1.2.8'
@@ -43,7 +41,7 @@ gem 'will_paginate', '3.1.6'
 gem 'sassc'
 gem 'sassc-rails'
 
-gem 'autoprefixer-rails', '~> 9.2.1'
+gem 'autoprefixer-rails', '~> 9.4.3'
 gem 'bourbon'
 gem 'coffee-rails', '~> 4.2.0'
 gem 'neat'
@@ -88,7 +86,7 @@ gem 'rack-mini-profiler'
 gem 'the_lone_dyno'
 
 gem 'sidekiq'
-gem 'sinatra', '~> 2.0.4'
+gem 'sinatra', '~> 2.0.5'
 
 gem 'aws-sdk', '~> 3'
 
@@ -101,7 +99,7 @@ gem 'sprockets-rails'
 gem 'babel-transpiler'
 
 gem 'scout_apm', '~> 2.4.20'
-gem 'yard', '~> 0.9.16'
+gem 'yard', '~> 0.9.18'
 
 gem 'oj'
 gem 'rack-canonical-host'
@@ -114,7 +112,7 @@ gem 'stackprof'
 gem 'prawn'
 gem 'skylight'
 
-gem 'minitest', '5.10.3'
+gem 'minitest', '5.11.3'
 gem 'sitemap_generator'
 gem 'premailer-rails'
 
