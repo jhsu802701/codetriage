@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sh config_env.sh
+if [ ! -f .env ]; then
+  sh config_env.sh
+fi
 
 PG_VERSION="$(ls /etc/postgresql)"
 PG_HBA="/etc/postgresql/$PG_VERSION/main/pg_hba.conf"
@@ -22,6 +24,10 @@ sudo bash -c "echo '# IPv6 local connections:' >> $PG_HBA"
 sudo bash -c "echo 'host    all             all             ::1/128                 trust' >> $PG_HBA"
 
 sh pg-start.sh
+
+echo '-----------------------------'
+echo 'gem install bundler -v 1.17.3'
+gem install bundler -v 1.17.3
 
 echo '--------------'
 echo 'bundle install'
