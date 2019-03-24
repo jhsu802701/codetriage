@@ -31,7 +31,8 @@ echo 'bundle exec rubocop -D'
 bundle exec rubocop -D
 
 # Checks for outdated and insecure gems
-echo '----------------------------------------------------------'
-echo 'bundle exec gemsurance --output tmp/gemsurance_report.html'
-bundle exec gemsurance --output tmp/gemsurance_report.html
+echo '----------------------'
+echo 'bundle exec gemsurance'
+bundle exec gemsurance
+mv gemsurance_report.html tmp/gemsurance_report.html
 echo 'The Gemsurance Report is at tmp/gemsurance_report.html .'

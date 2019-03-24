@@ -36,3 +36,5 @@ vendor/bundle
 tags
 
 config/secrets.yml.key
+
+gemsurance_report.html
