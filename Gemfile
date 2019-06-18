@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -5,7 +7,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.6.2'
+ruby '2.6.3'
 
 git_source :github do |name|
   "https://github.com/#{name}.git"
@@ -17,7 +19,7 @@ gem 'mime-types', '~> 3.2.2', require: 'mime/types/columnar'
 if ENV["RAILS_MASTER"] == '1'
   gem 'rails', git: 'https://github.com/rails/rails.git'
 else
-  gem 'rails', '5.2.2.1'
+  gem 'rails', '5.2.3'
 end
 
 gem 'bluecloth'
@@ -36,19 +38,19 @@ gem 'rrrretry'
 gem 'valid_email'
 gem 'warden', '1.2.8'
 gem 'wicked'
-gem 'will_paginate', '3.1.6'
+gem 'will_paginate', '3.1.7'
 # gem 'sass-rails', '6.0.0.beta1'
 gem 'sassc'
 gem 'sassc-rails'
 
-gem 'autoprefixer-rails', '~> 9.4.3'
+gem 'autoprefixer-rails', '~> 9.6.0'
 gem 'bourbon'
-gem 'coffee-rails', '~> 4.2.0'
+gem 'coffee-rails', '~> 5.0.0'
 gem 'neat'
 gem 'normalize-rails'
 gem 'slim-rails'
 gem 'uglifier', '>= 1.0.3'
-gem 'render_async', '~> 2.0'
+gem 'render_async', '~> 2.1'
 
 group :development do
   gem 'bullet'
@@ -59,7 +61,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '3.12.0'
+  gem 'capybara', '3.22.0'
   # Not essential but helpful for save_and_open_page
   gem 'launchy'
   gem 'mocha', require: false
@@ -77,7 +79,8 @@ group :development, :test do
   gem 'faker', require: false
   gem 'gemsurance', '0.9.0'
   gem 'pry'
-  gem 'rubocop', '0.58.2', require: false
+  gem 'rubocop', '0.71.0', require: false
+  gem 'rubocop-performance'
   gem 'teaspoon'
 end
 
@@ -98,8 +101,8 @@ gem 'sprockets-rails'
 
 gem 'babel-transpiler'
 
-gem 'scout_apm', '~> 2.4.20'
-gem 'yard', '~> 0.9.18'
+gem 'scout_apm', '~> 2.4.24'
+gem 'yard', '~> 0.9.19'
 
 gem 'oj'
 gem 'rack-canonical-host'

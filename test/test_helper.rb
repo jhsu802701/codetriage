@@ -1,5 +1,9 @@
-require 'simplecov'
-SimpleCov.start 'rails'
+# frozen_string_literal: true
+
+if ENV["COVERAGE"]
+  require 'simplecov'
+  SimpleCov.start 'rails'
+end
 
 ENV["RAILS_ENV"] = "test"
 require File.expand_path('../../config/environment', __FILE__)
@@ -41,7 +45,7 @@ OmniAuth.config.add_mock(:github, {
                            },
                            extra: {
                              raw_info: {
-                               name:       "Mock Star",
+                               name: "Mock Star",
                                avatar_url: "http://gravatar.com/avatar/default"
                              }
                            }
